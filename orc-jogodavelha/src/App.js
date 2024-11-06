@@ -3,6 +3,7 @@ import HelloWord from './components/HelloWord';
 import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 import Home from './pages/Home'
 import SinglePLayer from './pages/SinglePlayer';
+import Multiplayer from './pages/Multiplayer';
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
         <HelloWord text="Multiplayer"/> */}
         <Routes>
           <Route path='/' element={<SinglePLayer/>}></Route>
+          <Route path='/' element={<Multiplayer/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
